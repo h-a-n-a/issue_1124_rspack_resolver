@@ -26,7 +26,7 @@ module.exports = {
               process.platform === 'win32' &&
                 assert(
                   !module.moduleIdentifier.includes('/'),
-                  `Module Identifier of module 'a.js' should not include '/' on Windows`
+                  `Module Identifier of module 'a.js' should not include '/' on Windows (${module.moduleIdentifier})`
                 );
             }
           });
