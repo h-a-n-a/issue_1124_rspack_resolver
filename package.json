@@ -1,0 +1,13 @@
+{
+  "name": "rspack-starter",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "watch": "rspack --watch",
+    "build": "rspack build"
+  },
+  "devDependencies": {
+    "@rspack/cli": "0.3.14",
+    "@rspack/core": "0.3.14"
+  }
+}
