@@ -26,7 +26,7 @@ module.exports = {
               process.platform === 'win32' &&
                 assert(
                   !module.moduleIdentifier.includes('/'),
-                  `Module Identifier should not include '/' on Windows`
+                  `Module Identifier of module 'a.js' should not include '/' on Windows`
                 );
             }
           });
@@ -34,7 +34,9 @@ module.exports = {
       },
     },
   ],
+  cache: true,
   experiments: {
+    incrementalRebuild: true,
     rspackFuture: {
       newResolver: false,
     },
